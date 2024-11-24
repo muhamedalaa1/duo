@@ -144,62 +144,179 @@ document.querySelectorAll(".dashEle").forEach(function(ele){
     })
 });
 
-let tlTwo = gsap.timeline({
-  scrollTrigger: {
-    trigger: "header h1",
-    scroller: "#main",
-    start: "top -115%",
-    end: "top -130%",
-    scrub: 3,
-  },
-});
-tlTwo.to('#main',{
-    backgroundColor : "#fff"
-})
+if(window.innerWidth > 1225){
+  let tlTwo = gsap.timeline({
+    scrollTrigger: {
+      trigger: "header h1",
+      scroller: "#main",
+      start: "top -115%",
+      end: "top -130%",
+      scrub: 3,
+    },
+  });
+  tlTwo.to("#main", {
+    backgroundColor: "#fff",
+  });
+}
+if(window.innerWidth < 1225){
+  let tlTwo = gsap.timeline({
+    scrollTrigger: {
+      trigger: "header h1",
+      scroller: "#main",
+      start: "top -75%",
+      end: "top -90%",
+      scrub: 3,
+    },
+  });
+  tlTwo.to("#main", {
+    backgroundColor: "#fff",
+  });
+}
+if (window.innerWidth < 1000) {
+  let tlTwo = gsap.timeline({
+    scrollTrigger: {
+      trigger: "header h1",
+      scroller: "#main",
+      start: "top -45%",
+      end: "top -60%",
+      scrub: 3,
+    },
+  });
+  tlTwo.to("#main", {
+    backgroundColor: "#fff",
+  });
+}
+if (window.innerWidth < 800) {
+  let tlTwo = gsap.timeline({
+    scrollTrigger: {
+      trigger: "header h1",
+      scroller: "#main",
+      start: "top 0%",
+      end: "top -20%",
+      scrub: 3,
+    },
+  });
+  tlTwo.to("#main", {
+    backgroundColor: "#fff",
+  });
+}
+if (window.innerWidth < 700) {
+  let tlTwo = gsap.timeline({
+    scrollTrigger: {
+      trigger: "header h1",
+      scroller: "#main",
+      start: "top 10%",
+      end: "top -5%",
+      scrub: 3,
+    },
+  });
+  tlTwo.to("#main", {
+    backgroundColor: "#fff",
+  });
+}
+if (window.innerWidth < 550) {
+  let tlTwo = gsap.timeline({
+    scrollTrigger: {
+      trigger: "header h1",
+      scroller: "#main",
+      start: "top 25%",
+      end: "top 8%",
+      scrub: 3,
+    },
+  });
+  tlTwo.to("#main", {
+    backgroundColor: "#fff",
+  });
+}
 
-let tlThree = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".pageTwo h2",
-    scroller: "#main",
-    start: "top 27%",
-    end: "top 0%",
-    scrub: 3,
-  },
-});
-tlThree.from(".pageTwo h2", {
-  y: 100,
-  opacity:0,
-  duration:2,
-  ease :true
-});
-tlThree.from(".pageTwo .dashOne", {
-  y: 100,
-  opacity: 0,
+// ==========================
 
-  duration: 2,
-  ease: true,
-});
-tlThree.from(".pageTwo .dashTwo", {
-  y: 100,
-  duration: 2,
-  opacity: 0,
+if(window.innerWidth > 800){
+  let tlThree = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".pageTwo h2",
+      scroller: "#main",
+      start: "top 27%",
+      end: "top 0%",
+      scrub: 3,
+    },
+  });
+  tlThree.from(".pageTwo h2", {
+    y: 100,
+    opacity: 0,
+    duration: 2,
+    ease: true,
+  });
+  tlThree.from(".pageTwo .dashOne", {
+    y: 100,
+    opacity: 0,
 
-  ease: true,
-});
-tlThree.from(".pageTwo .dashThree", {
-  y: 100,
-  duration: 2,
-  opacity: 0,
+    duration: 2,
+    ease: true,
+  });
+  tlThree.from(".pageTwo .dashTwo", {
+    y: 100,
+    duration: 2,
+    opacity: 0,
 
-  ease: true,
-});
+    ease: true,
+  });
+  tlThree.from(".pageTwo .dashThree", {
+    y: 100,
+    duration: 2,
+    opacity: 0,
+
+    ease: true,
+  });
+}
+if(window.innerWidth < 800){
+  let tlThree = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".pageTwo h2",
+      scroller: "#main",
+      start: "-20% 60%",
+      end: "-20% 0%",
+      scrub: 3,
+    },
+  });
+
+  tlThree.from(".pageTwo h2", {
+    y: 100,
+    opacity: 0,
+    duration: 2,
+    ease: true,
+  });
+  tlThree.from(".pageTwo .dashOne", {
+    y: 100,
+    opacity: 0,
+
+    duration: 2,
+    ease: true,
+  });
+  tlThree.from(".pageTwo .dashTwo", {
+    y: 100,
+    duration: 2,
+    opacity: 0,
+
+    ease: true,
+  });
+  tlThree.from(".pageTwo .dashThree", {
+    y: 100,
+    duration: 2,
+    opacity: 0,
+
+    ease: true,
+  });
+}
+
 
 // end page two
 
 
 // start page three
 
-let tlFour = gsap.timeline({
+if(window.innerWidth > 1281){
+  let tlFour = gsap.timeline({
   scrollTrigger: {
     trigger: ".pageThreeWrapper",
     scroller: "#main",
@@ -231,23 +348,214 @@ tlFive.to('.secondRow .firstCol',{
 tlFive.to('.secondRow .secondCol',{
     x:-500,
 },"anime3")
+}
+if(window.innerWidth < 1281){
+  let tlFour = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".pageThreeWrapper",
+    scroller: "#main",
+    start: "15% 40%",
+    end: "15% 0%",
+    scrub: 3,
+  },
+});
+tlFour.to('.FirstRow .firstCol',{
+    x:500,
+},"anime2")
+tlFour.to('.FirstRow .secondCol',{
+    x:-500,
+},"anime2")
 
+
+let tlFive = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".pageThreeWrapper",
+    scroller: "#main",
+    start: "55% 40%",
+    end: "55% 0%",
+    scrub: 3,
+  },
+});
+tlFive.to('.secondRow .firstCol',{
+    x:500,
+},"anime3")
+tlFive.to('.secondRow .secondCol',{
+    x:-500,
+},"anime3")
+}
+if(window.innerWidth < 995){
+
+  let tlFour = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".pageThreeWrapper",
+    scroller: "#main",
+    start: "5% 40%",
+    end: "5% 0%",
+    scrub: 3,
+  },
+});
+tlFour.to('.FirstRow .firstCol',{
+    x:300,
+},"anime2")
+tlFour.to('.FirstRow .secondCol',{
+    x:-300,
+},"anime2")
+
+
+let tlFive = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".pageThreeWrapper",
+    scroller: "#main",
+    start: "45% 40%",
+    end: "45% 0%",
+    scrub: 3,
+  },
+});
+tlFive.to('.secondRow .firstCol',{
+    x:300,
+},"anime3")
+tlFive.to('.secondRow .secondCol',{
+    x:-300,
+},"anime3")
+}
+if(window.innerWidth < 895){
+
+  let tlFour = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".pageThreeWrapper",
+    scroller: "#main",
+    start: "-5% 40%",
+    end: "-5% 0%",
+    scrub: 3,
+  },
+});
+tlFour.to('.FirstRow .firstCol',{
+    x:250,
+},"anime2")
+tlFour.to('.FirstRow .secondCol',{
+    x:-250,
+},"anime2")
+
+
+let tlFive = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".pageThreeWrapper",
+    scroller: "#main",
+    start: "30% 40%",
+    end: "30% 0%",
+    scrub: 3,
+  },
+});
+tlFive.to('.secondRow .firstCol',{
+    x:250,
+},"anime3")
+tlFive.to('.secondRow .secondCol',{
+    x:-250,
+},"anime3")
+}
+if(window.innerWidth < 795){
+
+  let tlFour = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".pageThreeWrapper",
+    scroller: "#main",
+    start: "-10% 40%",
+    end: "-10% 0%",
+    scrub: 3,
+  },
+});
+tlFour.to('.FirstRow .firstCol',{
+    x:220,
+},"anime2")
+tlFour.to('.FirstRow .secondCol',{
+    x:-220,
+},"anime2")
+
+
+let tlFive = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".pageThreeWrapper",
+    scroller: "#main",
+    start: "20% 40%",
+    end: "20% 0%",
+    scrub: 3,
+  },
+});
+tlFive.to('.secondRow .firstCol',{
+    x:220,
+},"anime3")
+tlFive.to('.secondRow .secondCol',{
+    x:-220,
+},"anime3")
+}
+if(window.innerWidth < 550){
+
+  let tlFour = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".pageThreeWrapper",
+    scroller: "#main",
+    start: "-23% 40%",
+    end: "-23% 0%",
+    scrub: 3,
+  },
+});
+tlFour.to('.FirstRow .firstCol',{
+    x:200,
+},"anime2")
+tlFour.to('.FirstRow .secondCol',{
+    x:-200,
+},"anime2")
+
+
+let tlFive = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".pageThreeWrapper",
+    scroller: "#main",
+    start: "10% 40%",
+    end: "10% 0%",
+    scrub: 3,
+  },
+});
+tlFive.to('.secondRow .firstCol',{
+    x:200,
+},"anime3")
+tlFive.to('.secondRow .secondCol',{
+    x:-200,
+},"anime3")
+}
 // end page three
 
 
 // START PAGE FOUR
-let tlSix = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".pageThree",
-    scroller: "#main",
-    start: "top -250%",
-    end: "top -245%",
-    scrub: 3,
-  },
-});
-tlSix.to("#main", {
-  backgroundColor: "#000",
-});
+if(window.innerWidth > 800){
+  let tlSix = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".pageThree",
+      scroller: "#main",
+      start: "top -250%",
+      end: "top -245%",
+      scrub: 3,
+    },
+  });
+  tlSix.to("#main", {
+    backgroundColor: "#000",
+  });
+}
+
+if(window.innerWidth < 800){
+  let tlSix = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".pageThree",
+      scroller: "#main",
+      start: "top -150%",
+      end: "top -145%",
+      scrub: 3,
+    },
+  });
+  tlSix.to("#main", {
+    backgroundColor: "#000",
+  });
+}
 
 // END PAGE FOUR
 
@@ -257,13 +565,34 @@ console.log(myBoxes);
 myBoxes.forEach(function(box){
   box.addEventListener('mouseenter',function(){
     let myBoxImgURL = box.getAttribute('data-image')
-    myFollower.style.width = `400px`
-    myFollower.style.mixBlendMode = `unset`
-    myFollower.style.height = `450px`
-    myFollower.style.borderRadius = `0`
-    myFollower.style.backgroundImage = `url(${myBoxImgURL})`;
-    myFollower.style.backgroundPosition = `center`;
-    myFollower.style.backgroundSize = `cover`;
+          myFollower.style.borderRadius = `0`;
+          myFollower.style.backgroundImage = `url(${myBoxImgURL})`;
+          myFollower.style.backgroundPosition = `center`;
+          myFollower.style.backgroundSize = `cover`;
+          myFollower.style.mixBlendMode = `unset`;
+    if(window.innerWidth > 900){
+      myFollower.style.width = `400px`;
+      myFollower.style.height = `450px`;
+    }
+    if(window.innerWidth< 900){
+      myFollower.style.width = `300px`;
+      myFollower.style.height = `350px`;
+
+    }
+    if(window.innerWidth< 800){
+      myFollower.style.width = `250px`;
+      myFollower.style.height = `300px`;
+
+    }
+    if(window.innerWidth< 600){
+      myFollower.style.width = `150px`;
+      myFollower.style.height = `200px`;
+    }
+    if(window.innerWidth< 500){
+      myFollower.style.width = `100px`;
+      myFollower.style.height = `150px`;
+    }
+    
     // myFollower.innerHTML = `<img src="${myBoxImgURL}" alt="">`;
   })
   box.addEventListener('mouseleave',function(){

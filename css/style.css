@@ -116,6 +116,10 @@ header{
     min-height: 100vh;
     width: 100%;
     padding-top: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .container{
     width: 90%;
@@ -187,8 +191,10 @@ header > p {
 header video{
     width: 60%;
     position: relative;
-    left: 50%;
-    transform: translate(-50% , 60px);
+    /* left: 50%; */
+    /* margin-top: 60px; */
+    transform: translateY(60px);
+    /* transform: translateX(-50%) !important; */
 }
 /* END HEADER  */
 
@@ -226,6 +232,7 @@ margin-top: 5vw;
     border-radius: 2vw;
     color: #000;
     margin-top: 2vw;
+    margin-bottom: 2vw;
     cursor: pointer;
     transition: 0.3s all;
 }
@@ -503,7 +510,14 @@ font-family: "secondaryFontBold";
 /* START FOOTER */
 footer{
     width: 100%;
-    min-height: 100vh;
-    background-color: lightseagreen;
+    height: 50vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer h2{
+   font-size: 7.5vw;
+   font-weight: 900;
 }
 /* End FOOTER */

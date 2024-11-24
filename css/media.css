@@ -1,3 +1,4 @@
+/* START NAV MENU */
 @media screen and (max-width:730px) {
     .middleNav{
         display: none;
@@ -7,4 +8,136 @@
     }
     
 }
+/* END NAV MENU */
 
+/*START section strategy identity exp */
+@media screen and (max-width: 1475px){
+.element .headings:hover h2:nth-child(2) {
+        transform: translateY(-138px);
+    }
+    
+}
+@media screen and (max-width: 1311px){
+    .element .headings:hover h2:nth-child(2) {
+        transform: translateY(-128px);
+    }
+    
+}
+@media screen and (max-width: 1240px){
+   .element .headings {
+    height: 118px;
+    overflow: hidden;
+}
+    
+}
+@media screen and (max-width: 1188px){
+    .element .headings {
+    height: 108px;
+    overflow: hidden;
+}
+    .element .headings:hover h2:nth-child(2) {
+        transform: translateY(-123px);
+    }
+    
+}
+@media screen and (max-width: 1140px){
+.element .headings:hover h2:nth-child(2) {
+        transform: translateY(-118px);
+    }
+    
+}
+@media screen and (max-width: 1128px){
+    .element .headings:hover h2:nth-child(2) {
+        transform: translateY(-100px);
+    }
+
+}
+@media screen and (max-width: 1028px){
+        .element .headings {
+        height: 89px;
+        overflow: hidden;
+    }
+    .pageThreeWrapper .thirdCol {
+    height: 44%;
+}
+.pageThreeWrapper .secondCol {
+
+    height: 55%;
+
+}
+.pageThreeWrapper .firstCol {
+
+    height: 55%;
+
+}
+.FirstRow {
+    height: 100vh;
+    margin-bottom: 0;
+}
+
+}
+@media screen and (max-width: 943px){
+      .element .headings:hover h2:nth-child(2) {
+        transform: translateY(-75px);
+    }
+
+}
+@media screen and (max-width: 840px){
+     .element .headings {
+        height: 70px;
+        overflow: hidden;
+    }
+
+    .element img {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    opacity: 0;
+    transition: 0.4s all;
+}
+
+}
+@media screen and (max-width: 695px){
+     
+ .element .headings:hover h2:nth-child(2) {
+        transform: translateY(-65px);
+    }
+}
+@media screen and (max-width: 662px){
+     .element .headings {
+        height: 50px;
+        overflow: hidden;
+    }
+ 
+}
+@media screen and (max-width: 606px){
+     .element .headings:hover h2:nth-child(2) {
+        transform: translateY(-50px);
+    }
+
+    .element img {
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+    opacity: 0;
+    transition: 0.4s all;
+}
+ 
+}
+
+/* @media screen and (max-width: 525px) {
+    .pageThreeWrapper .thirdCol {
+    height: 44%;
+}
+.pageThreeWrapper .secondCol {
+
+    height: 55%;
+
+}
+.pageThreeWrapper .firstCol {
+
+    height: 55%;
+
+}
+} */
+/*END section strategy identity exp */
