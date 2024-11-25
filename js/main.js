@@ -144,90 +144,129 @@ document.querySelectorAll(".dashEle").forEach(function(ele){
     })
 });
 
-if(window.innerWidth > 1225){
-  let tlTwo = gsap.timeline({
-    scrollTrigger: {
-      trigger: "header h1",
-      scroller: "#main",
-      start: "top -115%",
-      end: "top -130%",
-      scrub: 3,
-    },
-  });
-  tlTwo.to("#main", {
-    backgroundColor: "#fff",
-  });
-}
-if(window.innerWidth < 1225){
-  let tlTwo = gsap.timeline({
-    scrollTrigger: {
-      trigger: "header h1",
-      scroller: "#main",
-      start: "top -75%",
-      end: "top -90%",
-      scrub: 3,
-    },
-  });
-  tlTwo.to("#main", {
-    backgroundColor: "#fff",
-  });
-}
-if (window.innerWidth < 1000) {
-  let tlTwo = gsap.timeline({
-    scrollTrigger: {
-      trigger: "header h1",
-      scroller: "#main",
-      start: "top -45%",
-      end: "top -60%",
-      scrub: 3,
-    },
-  });
-  tlTwo.to("#main", {
-    backgroundColor: "#fff",
-  });
-}
-if (window.innerWidth < 800) {
-  let tlTwo = gsap.timeline({
-    scrollTrigger: {
-      trigger: "header h1",
-      scroller: "#main",
-      start: "top 0%",
-      end: "top -20%",
-      scrub: 3,
-    },
-  });
-  tlTwo.to("#main", {
-    backgroundColor: "#fff",
-  });
-}
-if (window.innerWidth < 700) {
-  let tlTwo = gsap.timeline({
-    scrollTrigger: {
-      trigger: "header h1",
-      scroller: "#main",
-      start: "top 10%",
-      end: "top -5%",
-      scrub: 3,
-    },
-  });
-  tlTwo.to("#main", {
-    backgroundColor: "#fff",
-  });
-}
-if (window.innerWidth < 550) {
-  let tlTwo = gsap.timeline({
-    scrollTrigger: {
-      trigger: "header h1",
-      scroller: "#main",
-      start: "top 25%",
-      end: "top 8%",
-      scrub: 3,
-    },
-  });
-  tlTwo.to("#main", {
-    backgroundColor: "#fff",
-  });
-}
+let tlTwo = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".pageTwo",
+    scroller: "#main",
+    start: "top bottom",
+    // end: "top 200%",
+    scrub: 3,
+  },
+});
+tlTwo.to("#main", {
+  backgroundColor: "#fff",
+});
+let thSix = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".pageFour ",
+    scroller: "#main",
+    start: "top bottom",
+    // end: "top 200%",
+    scrub: 3,
+  },
+});
+thSix.to("#main", {
+  backgroundColor: "#000",
+});
+
+// if(window.innerWidth > 1225){
+//   let tlTwo = gsap.timeline({
+//     scrollTrigger: {
+//       trigger: "header h1",
+//       scroller: "#main",
+//       start: "top -115%",
+//       end: "top -130%",
+//       scrub: 3,
+//     },
+//   });
+//   tlTwo.to("#main", {
+//     backgroundColor: "#fff",
+//   });
+// }
+// if(window.innerWidth < 1225){
+//   let tlTwo = gsap.timeline({
+//     scrollTrigger: {
+//       trigger: "header h1",
+//       scroller: "#main",
+//       start: "top -75%",
+//       end: "top -90%",
+//       scrub: 3,
+//     },
+//   });
+//   tlTwo.to("#main", {
+//     backgroundColor: "#fff",
+//   });
+// }
+// if (window.innerWidth < 1000) {
+//   let tlTwo = gsap.timeline({
+//     scrollTrigger: {
+//       trigger: "header h1",
+//       scroller: "#main",
+//       start: "top -45%",
+//       end: "top -60%",
+//       scrub: 3,
+//     },
+//   });
+//   tlTwo.to("#main", {
+//     backgroundColor: "#fff",
+//   });
+// }
+// if (window.innerWidth < 800) {
+//   let tlTwo = gsap.timeline({
+//     scrollTrigger: {
+//       trigger: "header h1",
+//       scroller: "#main",
+//       start: "top 0%",
+//       end: "top -20%",
+//       scrub: 3,
+//     },
+//   });
+//   tlTwo.to("#main", {
+//     backgroundColor: "#fff",
+//   });
+// }
+// if (window.innerWidth < 700) {
+//   let tlTwo = gsap.timeline({
+//     scrollTrigger: {
+//       trigger: "header h1",
+//       scroller: "#main",
+//       start: "top 10%",
+//       end: "top -5%",
+//       scrub: 3,
+//     },
+//   });
+//   tlTwo.to("#main", {
+//     backgroundColor: "#fff",
+//   });
+// }
+// if (window.innerWidth < 550) {
+//   let tlTwo = gsap.timeline({
+//     scrollTrigger: {
+//       trigger: "header h1",
+//       scroller: "#main",
+//       start: "top 25%",
+//       end: "top 8%",
+//       scrub: 3,
+//     },
+//   });
+//   tlTwo.to("#main", {
+//     backgroundColor: "#fff",
+//   });
+// }
+// if (window.innerWidth < 400) {
+//   let tlTwo = gsap.timeline({
+//     scrollTrigger: {
+//       trigger: "header h1",
+//       scroller: "#main",
+//       start: "top 10%",
+//       end: "top 18%",
+//       scrub: 3,
+//     },
+//   });
+//   tlTwo.to("#main", {
+//     backgroundColor: "#fff",
+//   });
+// }
 
 // ==========================
 
@@ -315,21 +354,25 @@ if(window.innerWidth < 800){
 
 // start page three
 
-if(window.innerWidth > 1281){
+
+
+
+
+if(window.innerWidth > 1200){
   let tlFour = gsap.timeline({
   scrollTrigger: {
     trigger: ".pageThreeWrapper",
     scroller: "#main",
-    start: "20% 40%",
-    end: "20% 0%",
+    start: "0% 10%",
+    end: "0% 0%",
     scrub: 3,
   },
 });
 tlFour.to('.FirstRow .firstCol',{
-    x:500,
+    x:"40vw",
 },"anime2")
 tlFour.to('.FirstRow .secondCol',{
-    x:-500,
+    x:"-40vw",
 },"anime2")
 
 
@@ -337,33 +380,33 @@ let tlFive = gsap.timeline({
   scrollTrigger: {
     trigger: ".pageThreeWrapper",
     scroller: "#main",
-    start: "60% 40%",
+    start: "60% 10%",
     end: "60% 0%",
     scrub: 3,
   },
 });
 tlFive.to('.secondRow .firstCol',{
-    x:500,
+    x:"40vw",
 },"anime3")
 tlFive.to('.secondRow .secondCol',{
-    x:-500,
+    x:"-40vw",
 },"anime3")
 }
-if(window.innerWidth < 1281){
-  let tlFour = gsap.timeline({
+if(window.innerWidth > 992 && window.innerWidth <= 1200){
+let tlFour = gsap.timeline({
   scrollTrigger: {
     trigger: ".pageThreeWrapper",
     scroller: "#main",
-    start: "15% 40%",
-    end: "15% 0%",
+    start: "0% 25%",
+    end: "0% 0%",
     scrub: 3,
   },
 });
 tlFour.to('.FirstRow .firstCol',{
-    x:500,
+    x:"40vw",
 },"anime2")
 tlFour.to('.FirstRow .secondCol',{
-    x:-500,
+    x:"-40vw",
 },"anime2")
 
 
@@ -371,34 +414,34 @@ let tlFive = gsap.timeline({
   scrollTrigger: {
     trigger: ".pageThreeWrapper",
     scroller: "#main",
-    start: "55% 40%",
-    end: "55% 0%",
+    start: "60% 25%",
+    end: "60% 0%",
     scrub: 3,
   },
 });
 tlFive.to('.secondRow .firstCol',{
-    x:500,
+    x:"40vw",
 },"anime3")
 tlFive.to('.secondRow .secondCol',{
-    x:-500,
+    x:"-40vw",
 },"anime3")
-}
-if(window.innerWidth < 995){
 
+}
+if(window.innerWidth > 767 && window.innerWidth <=992){
   let tlFour = gsap.timeline({
   scrollTrigger: {
     trigger: ".pageThreeWrapper",
     scroller: "#main",
-    start: "5% 40%",
-    end: "5% 0%",
+    start: "0% 55%",
+    end: "0% 0%",
     scrub: 3,
   },
 });
 tlFour.to('.FirstRow .firstCol',{
-    x:300,
+    x:"40vw",
 },"anime2")
 tlFour.to('.FirstRow .secondCol',{
-    x:-300,
+    x:"-40vw",
 },"anime2")
 
 
@@ -406,34 +449,34 @@ let tlFive = gsap.timeline({
   scrollTrigger: {
     trigger: ".pageThreeWrapper",
     scroller: "#main",
-    start: "45% 40%",
-    end: "45% 0%",
+    start: "60% 55%",
+    end: "60% 0%",
     scrub: 3,
+
   },
 });
 tlFive.to('.secondRow .firstCol',{
-    x:300,
+    x:"40vw",
 },"anime3")
 tlFive.to('.secondRow .secondCol',{
-    x:-300,
+    x:"-40vw",
 },"anime3")
 }
-if(window.innerWidth < 895){
-
-  let tlFour = gsap.timeline({
+if(window.innerWidth > 500 && window.innerWidth <=767){
+let tlFour = gsap.timeline({
   scrollTrigger: {
     trigger: ".pageThreeWrapper",
     scroller: "#main",
-    start: "-5% 40%",
-    end: "-5% 0%",
+    start: "0% 63%",
+    end: "0% 0%",
     scrub: 3,
   },
 });
 tlFour.to('.FirstRow .firstCol',{
-    x:250,
+    x:"40vw",
 },"anime2")
 tlFour.to('.FirstRow .secondCol',{
-    x:-250,
+    x:"-40vw",
 },"anime2")
 
 
@@ -441,34 +484,34 @@ let tlFive = gsap.timeline({
   scrollTrigger: {
     trigger: ".pageThreeWrapper",
     scroller: "#main",
-    start: "30% 40%",
-    end: "30% 0%",
+    start: "60% 63%",
+    end: "60% 0%",
     scrub: 3,
+
   },
 });
 tlFive.to('.secondRow .firstCol',{
-    x:250,
+    x:"40vw",
 },"anime3")
 tlFive.to('.secondRow .secondCol',{
-    x:-250,
+    x:"-40vw",
 },"anime3")
 }
-if(window.innerWidth < 795){
-
+if (window.innerWidth <= 500) {
   let tlFour = gsap.timeline({
   scrollTrigger: {
     trigger: ".pageThreeWrapper",
     scroller: "#main",
-    start: "-10% 40%",
-    end: "-10% 0%",
+    start: "0% 73%",
+    end: "0% 0%",
     scrub: 3,
   },
 });
 tlFour.to('.FirstRow .firstCol',{
-    x:220,
+    x:"40vw",
 },"anime2")
 tlFour.to('.FirstRow .secondCol',{
-    x:-220,
+    x:"-40vw",
 },"anime2")
 
 
@@ -476,87 +519,51 @@ let tlFive = gsap.timeline({
   scrollTrigger: {
     trigger: ".pageThreeWrapper",
     scroller: "#main",
-    start: "20% 40%",
-    end: "20% 0%",
+    start: "60% 73%",
+    end: "60% 0%",
     scrub: 3,
+
   },
 });
 tlFive.to('.secondRow .firstCol',{
-    x:220,
+    x:"40vw",
 },"anime3")
 tlFive.to('.secondRow .secondCol',{
-    x:-220,
-},"anime3")
-}
-if(window.innerWidth < 550){
-
-  let tlFour = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".pageThreeWrapper",
-    scroller: "#main",
-    start: "-23% 40%",
-    end: "-23% 0%",
-    scrub: 3,
-  },
-});
-tlFour.to('.FirstRow .firstCol',{
-    x:200,
-},"anime2")
-tlFour.to('.FirstRow .secondCol',{
-    x:-200,
-},"anime2")
-
-
-let tlFive = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".pageThreeWrapper",
-    scroller: "#main",
-    start: "10% 40%",
-    end: "10% 0%",
-    scrub: 3,
-  },
-});
-tlFive.to('.secondRow .firstCol',{
-    x:200,
-},"anime3")
-tlFive.to('.secondRow .secondCol',{
-    x:-200,
+    x:"-40vw",
 },"anime3")
 }
 // end page three
 
 
 // START PAGE FOUR
-if(window.innerWidth > 800){
-  let tlSix = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".pageThree",
-      scroller: "#main",
-      start: "top -250%",
-      end: "top -245%",
-      scrub: 3,
-    },
-  });
-  tlSix.to("#main", {
-    backgroundColor: "#000",
-  });
-}
-
-if(window.innerWidth < 800){
-  let tlSix = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".pageThree",
-      scroller: "#main",
-      start: "top -150%",
-      end: "top -145%",
-      scrub: 3,
-    },
-  });
-  tlSix.to("#main", {
-    backgroundColor: "#000",
-  });
-}
-
+// if(window.innerWidth > 800){
+//   let tlSix = gsap.timeline({
+//     scrollTrigger: {
+//       trigger: ".pageThree",
+//       scroller: "#main",
+//       start: "top -250%",
+//       end: "top -245%",
+//       scrub: 3,
+//     },
+//   });
+//   tlSix.to("#main", {
+//     backgroundColor: "#000",
+//   });
+// }
+// if(window.innerWidth < 800){
+//   let tlSix = gsap.timeline({
+//     scrollTrigger: {
+//       trigger: ".pageThree",
+//       scroller: "#main",
+//       start: "top -150%",
+//       end: "top -145%",
+//       scrub: 3,
+//     },
+//   });
+//   tlSix.to("#main", {
+//     backgroundColor: "#000",
+//   });
+// }
 // END PAGE FOUR
 
 // START PAGE FIVE

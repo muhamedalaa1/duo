@@ -510,11 +510,12 @@ font-family: "secondaryFontBold";
 /* START FOOTER */
 footer{
     width: 100%;
-    height: 50vh;
+    /* height: 50vh; */
     background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 footer h2{
    font-size: 7.5vw;

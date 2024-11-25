@@ -124,20 +124,250 @@
 }
  
 }
+@media screen and (max-width: 480px) {
+        .element .headings {
+        height: 38px;
+        overflow: hidden;
+    }
+        .element .headings:hover h2:nth-child(2) {
+        transform: translateY(-38px);
+    }
+}
+@media screen and (max-width: 366px) {
+    .element .headings:hover h2:nth-child(2) {
+        transform: translateY(-29px);
+    }
+    .element .headings {
+        height: 29px;
+        overflow: hidden;
+    }
+}
+/* ======================== */
 
-/* @media screen and (max-width: 525px) {
+@media screen and (max-width: 1200px) {
+
+    .pageTwo {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 0 0;
+    border-bottom: 1px solid #000;
+}
+    
+}
+
+@media screen and (max-width: 991px) {
+    header > p {
+    font-size: 1.5vw;
+
+}
+.pageTwo .changeImgWithHover .leftPartDash .dashEle p {
+    font-weight: 100;
+    font-size: 1.5vw;
+}
+.pageTwo {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 0 0;
+    border-bottom: 1px solid #000;
+}
+/* ;; */
+
+.pageThreeWrapper {
+    min-height: 100vh;
+
+}
+.FirstRowLeftImg {
+    height: 75%;
+}
     .pageThreeWrapper .thirdCol {
-    height: 44%;
+        height: 40%;
+    }
+            .FirstRow {
+        height: 65vh;
+        margin-bottom: 0;
+    }
+    .pageThreeWrapper .firstCol {
+        height: 100%;
+    }
+    .pageThreeWrapper .secondCol {
+        height: 100%;
+    }
+        .secondRow {
+        height: 65vh;
+        margin-bottom: 0;
+    }
 }
-.pageThreeWrapper .secondCol {
 
-    height: 55%;
+@media screen and (max-width: 767px) {
+     header {
+        padding-top: 20vw;
+    }
+    header > p {
+        font-size: 2vw;
+        margin-bottom: 42vw;
+    }
+
+.pageTwo h2 {
+    font-size: 3vw;
 
 }
-.pageThreeWrapper .firstCol {
-
-    height: 55%;
+.pageTwo h2 span {
+    font-size: 2.2vw;
 
 }
-} */
-/*END section strategy identity exp */
+.pageTwo .changeImgWithHover .leftPartDash .dashEle p {
+    font-weight: 100;
+    font-size: 2.2vw;
+}
+
+
+/* ;;;; */
+
+.pageThreeWrapper {
+    min-height: 100vh;
+
+}
+.FirstRowLeftImg {
+    height: 75%;
+}
+    .pageThreeWrapper .thirdCol {
+        height: 40%;
+    }
+        .FirstRow {
+        height: 50vh;
+        margin-bottom: 0;
+    }
+    .pageThreeWrapper .firstCol {
+        height: 100%;
+    }
+    .pageThreeWrapper .secondCol {
+        height: 100%;
+    }
+        .secondRow {
+        height: 50vh;
+        margin-bottom: 0;
+    }
+
+    .pageFour {
+
+    min-height: 50vh;
+
+   
+}
+.pageTwo .changeImgWithHover .rightPartForImg {
+    margin: 8vw 0;
+}
+
+.boxes .box > h2 {
+    font-size: 2.5vw;
+}
+
+.pageFive {
+
+    min-height: 50vh;
+
+}
+footer{
+
+    height: 30vh;
+
+}
+
+}
+@media screen and (max-width:501px) {
+  header {
+    min-height: 80vh;
+
+    padding-top: 35vw;
+
+}
+    header > p {
+        font-size: 2.2vw;
+        margin: 1vw 0 35vw 0;
+    }
+
+
+.pageTwo .changeImgWithHover .leftPartDash .dashEle p {
+
+    font-size: 2.9vw;
+}
+.boxes .box > h2 {
+    font-size: 3vw;
+}
+.pageTwo h2 {
+    font-size: 3.5vw;
+}
+.pageThreeWrapper .thirdCol p {
+    font-size: 2.5vw;
+
+}
+.pageTwo h2 span {
+    font-size: 2.2vw;
+
+}
+.pageTwo {
+
+    min-height: 100vh;
+    padding: 0 ;
+
+}
+.pageThreeWrapper {
+    min-height: 100vh;
+
+}
+.FirstRowLeftImg {
+    height: 75%;
+}
+    .pageThreeWrapper .thirdCol {
+        height: 40%;
+    }
+        .FirstRow {
+        height: 50vh;
+        margin-bottom: 0;
+    }
+    .pageThreeWrapper .firstCol {
+        height: 100%;
+    }
+    .pageThreeWrapper .secondCol {
+        height: 100%;
+    }
+        .secondRow {
+        height: 50vh;
+        margin-bottom: 0;
+    }
+.pageFour {
+
+    min-height: 50vh;
+
+   
+}
+.pageTwo .changeImgWithHover .rightPartForImg {
+    margin: 8vw 0;
+}
+    
+}
+@media screen and (max-width : 400px) {
+    .FirstRow {
+        height: 33vh;
+        margin-bottom: 0;
+    }
+    .secondRow {
+        height: 33vh;
+        margin-bottom: 0;
+    }
+
+        .pageThreeWrapper .thirdCol {
+        height: 50%;
+    }
+    .pageThreeWrapper .thirdCol {
+
+    top: 15%;
+
+}
+    .pageTwo .changeImgWithHover .leftPartDash .dashEle p {
+        font-size: 3.1vw;
+    }
+}
+
+
+/* men 767 le 630 */
