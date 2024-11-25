@@ -132,15 +132,16 @@
         .element .headings:hover h2:nth-child(2) {
         transform: translateY(-38px);
     }
+    .pageThree {
+    width: 100%;
+    min-height: 100vh;
+}
 }
 @media screen and (max-width: 366px) {
     .element .headings:hover h2:nth-child(2) {
         transform: translateY(-29px);
     }
-    .element .headings {
-        height: 29px;
-        overflow: hidden;
-    }
+    
 }
 /* ======================== */
 
@@ -286,6 +287,11 @@ footer{
         margin: 1vw 0 35vw 0;
     }
 
+    .element .headings {
+        height: 29px;
+        overflow: hidden;
+    }
+
 
 .pageTwo .changeImgWithHover .leftPartDash .dashEle p {
 
@@ -344,6 +350,10 @@ footer{
 .pageTwo .changeImgWithHover .rightPartForImg {
     margin: 8vw 0;
 }
+.pageThree {
+    width: 100%;
+    min-height: 100vh;
+}
     
 }
 @media screen and (max-width : 400px) {
@@ -367,6 +377,10 @@ footer{
     .pageTwo .changeImgWithHover .leftPartDash .dashEle p {
         font-size: 3.1vw;
     }
+    .pageThree {
+    width: 100%;
+    min-height: 100vh;
+}
 }
 
 

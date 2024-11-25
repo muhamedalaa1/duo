@@ -91,7 +91,7 @@ tlForHeaders.to(".welcomeMsg h2", {
   duration:0.5
 });
 tlForHeaders.to(".welcomeMsg", {
-  y:"-100%",
+  y:"-120%",
   duration:1,
 });
 tlForHeaders.to(".welcomeMsg", {
@@ -132,7 +132,9 @@ tlOne.to('header h2',{
 },"anime")
 tlOne.to('header video',{
     width: "95%",
-    y:-400
+    y:-400,
+    duration:1,
+    ease: true,
 },"anime")
 // end animat header
 
@@ -156,117 +158,8 @@ let tlTwo = gsap.timeline({
 tlTwo.to("#main", {
   backgroundColor: "#fff",
 });
-let thSix = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".pageFour ",
-    scroller: "#main",
-    start: "top bottom",
-    // end: "top 200%",
-    scrub: 3,
-  },
-});
-thSix.to("#main", {
-  backgroundColor: "#000",
-});
 
-// if(window.innerWidth > 1225){
-//   let tlTwo = gsap.timeline({
-//     scrollTrigger: {
-//       trigger: "header h1",
-//       scroller: "#main",
-//       start: "top -115%",
-//       end: "top -130%",
-//       scrub: 3,
-//     },
-//   });
-//   tlTwo.to("#main", {
-//     backgroundColor: "#fff",
-//   });
-// }
-// if(window.innerWidth < 1225){
-//   let tlTwo = gsap.timeline({
-//     scrollTrigger: {
-//       trigger: "header h1",
-//       scroller: "#main",
-//       start: "top -75%",
-//       end: "top -90%",
-//       scrub: 3,
-//     },
-//   });
-//   tlTwo.to("#main", {
-//     backgroundColor: "#fff",
-//   });
-// }
-// if (window.innerWidth < 1000) {
-//   let tlTwo = gsap.timeline({
-//     scrollTrigger: {
-//       trigger: "header h1",
-//       scroller: "#main",
-//       start: "top -45%",
-//       end: "top -60%",
-//       scrub: 3,
-//     },
-//   });
-//   tlTwo.to("#main", {
-//     backgroundColor: "#fff",
-//   });
-// }
-// if (window.innerWidth < 800) {
-//   let tlTwo = gsap.timeline({
-//     scrollTrigger: {
-//       trigger: "header h1",
-//       scroller: "#main",
-//       start: "top 0%",
-//       end: "top -20%",
-//       scrub: 3,
-//     },
-//   });
-//   tlTwo.to("#main", {
-//     backgroundColor: "#fff",
-//   });
-// }
-// if (window.innerWidth < 700) {
-//   let tlTwo = gsap.timeline({
-//     scrollTrigger: {
-//       trigger: "header h1",
-//       scroller: "#main",
-//       start: "top 10%",
-//       end: "top -5%",
-//       scrub: 3,
-//     },
-//   });
-//   tlTwo.to("#main", {
-//     backgroundColor: "#fff",
-//   });
-// }
-// if (window.innerWidth < 550) {
-//   let tlTwo = gsap.timeline({
-//     scrollTrigger: {
-//       trigger: "header h1",
-//       scroller: "#main",
-//       start: "top 25%",
-//       end: "top 8%",
-//       scrub: 3,
-//     },
-//   });
-//   tlTwo.to("#main", {
-//     backgroundColor: "#fff",
-//   });
-// }
-// if (window.innerWidth < 400) {
-//   let tlTwo = gsap.timeline({
-//     scrollTrigger: {
-//       trigger: "header h1",
-//       scroller: "#main",
-//       start: "top 10%",
-//       end: "top 18%",
-//       scrub: 3,
-//     },
-//   });
-//   tlTwo.to("#main", {
-//     backgroundColor: "#fff",
-//   });
-// }
+
 
 // ==========================
 
@@ -292,21 +185,21 @@ if(window.innerWidth > 800){
 
     duration: 2,
     ease: true,
-  });
+  },"together");
   tlThree.from(".pageTwo .dashTwo", {
     y: 100,
     duration: 2,
     opacity: 0,
 
     ease: true,
-  });
+  } ,"together");
   tlThree.from(".pageTwo .dashThree", {
     y: 100,
     duration: 2,
     opacity: 0,
 
     ease: true,
-  });
+  } ,"together");
 }
 if(window.innerWidth < 800){
   let tlThree = gsap.timeline({
@@ -348,7 +241,6 @@ if(window.innerWidth < 800){
   });
 }
 
-
 // end page two
 
 
@@ -370,9 +262,11 @@ if(window.innerWidth > 1200){
 });
 tlFour.to('.FirstRow .firstCol',{
     x:"40vw",
+    duration:1
 },"anime2")
 tlFour.to('.FirstRow .secondCol',{
     x:"-40vw",
+    duration:1
 },"anime2")
 
 
@@ -387,9 +281,11 @@ let tlFive = gsap.timeline({
 });
 tlFive.to('.secondRow .firstCol',{
     x:"40vw",
+
 },"anime3")
 tlFive.to('.secondRow .secondCol',{
     x:"-40vw",
+
 },"anime3")
 }
 if(window.innerWidth > 992 && window.innerWidth <= 1200){
@@ -536,34 +432,18 @@ tlFive.to('.secondRow .secondCol',{
 
 
 // START PAGE FOUR
-// if(window.innerWidth > 800){
-//   let tlSix = gsap.timeline({
-//     scrollTrigger: {
-//       trigger: ".pageThree",
-//       scroller: "#main",
-//       start: "top -250%",
-//       end: "top -245%",
-//       scrub: 3,
-//     },
-//   });
-//   tlSix.to("#main", {
-//     backgroundColor: "#000",
-//   });
-// }
-// if(window.innerWidth < 800){
-//   let tlSix = gsap.timeline({
-//     scrollTrigger: {
-//       trigger: ".pageThree",
-//       scroller: "#main",
-//       start: "top -150%",
-//       end: "top -145%",
-//       scrub: 3,
-//     },
-//   });
-//   tlSix.to("#main", {
-//     backgroundColor: "#000",
-//   });
-// }
+let thSix = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".pageFour ",
+    scroller: "#main",
+    start: "top bottom",
+    // end: "top 200%",
+    scrub: 3,
+  },
+});
+thSix.to("#main", {
+  backgroundColor: "#000",
+});
 // END PAGE FOUR
 
 // START PAGE FIVE
@@ -648,7 +528,7 @@ document.querySelector(".hamburger").addEventListener('click',function(){
   document.querySelector(".hamburger span:nth-child(2)").style.transform = 'translateY(0) rotate(-45deg)';
   flag = true
   }else{
-    document.querySelector(".menuOverLay").style.top = "-100%";
+    document.querySelector(".menuOverLay").style.top = "-120%";
     document.querySelector(".hamburger span:nth-child(1)").style.transform = 'translateY(-3px) rotate(0)';
   document.querySelector(".hamburger span:nth-child(2)").style.transform = 'translateY(3px) rotate(0)';
     flag = false;

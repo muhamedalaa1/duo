@@ -294,13 +294,14 @@ margin-top: 5vw;
 }
 .FirstRowLeftImg{
     height: 100%;
+    border-radius: 32px !important;
 }
 .FirstRowRightImg{
     height: 100%;
 }
 .pageThreeWrapper .firstCol{
     width: 40%;
-    border-radius: 32px;
+    border-radius: 32px !important;
     height: 80%;
     position: absolute;
     left: 52%;
@@ -309,12 +310,12 @@ margin-top: 5vw;
     overflow: hidden;
 }
 .pageThreeWrapper .firstCol img{
-    border-radius: 32px;
+    border-radius: 32px !important;
     height: 100%;
 }
 .pageThreeWrapper .secondCol{
     width: 40%;
-    border-radius: 32px;
+    border-radius: 32px !important;
     height: 80%;
     position: absolute;
     left: 48%;
@@ -324,12 +325,12 @@ margin-top: 5vw;
 }
 .pageThreeWrapper .secondCol img{
     height: 100%;
-    border-radius: 32px;
+    border-radius: 32px !important;
 
 }
 .pageThreeWrapper .thirdCol{
     width: 50%;
-    border-radius: 32px;
+    border-radius: 32px !important;
     height: 80%;
     position: absolute;
     left: 50%;
